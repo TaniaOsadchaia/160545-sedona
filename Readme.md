@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Осадчая](https://up.htmlacademy.ru/adaptive/7/user/160545).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Сальников](https://up.htmlacademy.ru/adaptive/7/user/11027).
 
 ---
 
