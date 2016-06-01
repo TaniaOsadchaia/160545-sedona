@@ -25,48 +25,48 @@
       <h1 class="page-title">Оставьте свой отзыв</h1>
       <p class="page-desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <section class="recall">
-        <form class="recall__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Представьтесь, пожалуйста:</legend>
-            <label for="name">Имя:</label>
-            <input id="name" name="name" type="text" placeholder="Ваше имя">
-            <label for="surname">Фамилия:</label>
-            <input id="surname" name="surname" type="text" placeholder="Ваша фамилия">
-            <label for="patronymic">Отчество:</label>
-            <input id="patronymic" name="patronymic" type="text" placeholder="Ваше отчество">
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form__set">
+            <legend class="form__set-header">Представьтесь, пожалуйста:</legend>
+            <label class="form__label" for="name">Имя:</label>
+            <input class="form__input-text" id="name" name="name" type="text" placeholder="Ваше имя">
+            <label class="form__label" for="surname">Фамилия:</label>
+            <input class="form__input-text" id="surname" name="surname" type="text" placeholder="Ваша фамилия">
+            <label class="form__label" for="patronymic">Отчество:</label>
+            <input class="form__input-text" id="patronymic" name="patronymic" type="text" placeholder="Ваше отчество">
           </fieldset>
-          <fieldset>
-            <legend>Контактная информация:</legend>
-            <label for="tel">Контактный телефон:</label>
-            <input class="recall__phone" id="tel" name="tel" type="tel" placeholder="Введите телефон">
-            <label for="email">Электронная почта:</label>
-            <input class="recall__email" id="email" name="email" type="text" placeholder="Введите e-mail">
+          <fieldset class="form__set">
+            <legend class="form__set-header">Контактная информация:</legend>
+            <label class="form__label" for="tel">Контактный телефон:</label>
+            <input class="form__input-text  form__input-text--phone" id="tel" name="tel" type="tel" placeholder="Введите телефон">
+            <label class="form__label" for="email">Электронная почта:</label>
+            <input class="form__input-text  form__input-text--email" id="email" name="email" type="text" placeholder="Введите e-mail">
           </fieldset>
-          <fieldset>
-            <legend>Ваше общее впечатление:</legend>
-            <input id="rating-1" name="rating" type="radio" value="rating-1" checked>
-            <label for="rating-1">Скорее положительное</label>
-            <input id="rating-2" name="rating" type="radio" value="rating-2">
-            <label for="rating-2">Скорее отрицательное</label>
-            <input id="rating-3" name="rating" type="radio" value="rating-3">
-            <label for="rating-3">Затрудняюсь ответить</label>
+          <fieldset class="form__set">
+            <legend class="form__set-header">Ваше общее впечатление:</legend>
+            <input class="form__input-radio  form__input-radio--checked" id="rating-1" name="rating" type="radio" value="rating-1" checked>
+            <label class="form__label  form__label--bold" for="rating-1">Скорее положительное</label>
+            <input class="form__input-radio" id="rating-2" name="rating" type="radio" value="rating-2">
+            <label class="form__label  form__label--bold" for="rating-2">Скорее отрицательное</label>
+            <input class="form__input-radio" id="rating-3" name="rating" type="radio" value="rating-3">
+            <label class="form__label  form__label--bold" for="rating-3">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset>
-            <legend>Посещенные достопримечательности:</legend>
-            <input id="check-in-1" name="check-in-1" type="checkbox" checked>
-            <label for="check-in-1">Мост Дьявола</label>
-            <input id="check-in-2" name="check-in-2" type="checkbox" checked>
-            <label for="check-in-2">Слайд-парк</label>
-            <input id="check-in-3" name="check-in-3" type="checkbox">
-            <label for="check-in-3">Гора-Колокол</label>
-            <input id="check-in-4" name="check-in-4" type="checkbox" checked>
-            <label for="check-in-4">Красные скалы</label>
+          <fieldset class="form__set">
+            <legend class="form__set-header">Посещенные достопримечательности:</legend>
+            <input class="form__input-checkbox  form__input-checkbox--checked" id="check-in-1" name="check-in-1" type="checkbox" checked>
+            <label class="form__label  form__label--bold" for="check-in-1">Мост Дьявола</label>
+            <input class="form__input-checkbox  form__input-checkbox--checked" id="check-in-2" name="check-in-2" type="checkbox" checked>
+            <label class="form__label  form__label--bold" for="check-in-2">Слайд-парк</label>
+            <input class="form__input-checkbox" id="check-in-3" name="check-in-3" type="checkbox">
+            <label class="form__label  form__label--bold" for="check-in-3">Гора-Колокол</label>
+            <input class="form__input-checkbox  form__input-checkbox--checked" id="check-in-4" name="check-in-4" type="checkbox" checked>
+            <label class="form__label  form__label--bold" for="check-in-4">Красные скалы</label>
           </fieldset>
-          <fieldset>
-            <legend>Опишите свои эмоции</legend>
-            <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__set">
+            <legend class="form__set-header">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="recall__submit" type="submit">Отправить отзыв</button>
+          <button class="form__button  form__button--submit" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>
