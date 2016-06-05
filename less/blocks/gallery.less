@@ -1,7 +1,10 @@
 .gallery {
+  .container();
+  
   &__item-title {
     font-size: 14px;
     line-height: 24px;
+    text-align: left;
     text-transform: uppercase;
     font-weight: @font-bold;
     color: @color-text;
@@ -10,6 +13,7 @@
   &__item-auth {
     font-size: 14px;
     line-height: 24px;
+    text-align: left;
     text-transform: none;
     font-weight: @font-normal;
     color: @color-text;
@@ -18,9 +22,15 @@
   &__item-likes {
     font-size: 14px;
     line-height: 24px;
+    text-align: left;
     text-transform: none;
     font-weight: @font-bold;
     color: @color-text;
+  }
+  
+  &__item-image {
+    margin: 0;
+    padding: 0;
   }
   
   /*&__item-likes-label {

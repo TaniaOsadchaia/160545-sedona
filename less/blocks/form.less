@@ -4,11 +4,17 @@
   
   &__set {
     border: none;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  &__container {
+    .container();
   }
   
   &__set-header {
     font-size: 18px;
     line-height: 28px;
+    text-align: center;
     text-transform: uppercase;
     font-weight: @font-bold;
     color: @color;
@@ -66,8 +72,12 @@
   
   &__button {
     &--submit {
+      display: block;
+      width: 100%;
+      padding: 5px 16px;
       font-size: 21px;
       line-height: 26px;
+      text-align: center;
       text-transform: uppercase;
       font-weight: @font-bold;
       color: @color-text-secondary;

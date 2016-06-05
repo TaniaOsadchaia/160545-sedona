@@ -1,10 +1,21 @@
 .page-footer {
+  .container();
+  text-align: center;
+  
+  &__contacts {
+    display: block;
+  }
+  
   &__contact-link {
     .set-link-style(@color-text, none);
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
     font-weight: @font-bold;
+  }
+  
+  &&__copyright {
+    display: block;
   }
   
   &__copyright-link {

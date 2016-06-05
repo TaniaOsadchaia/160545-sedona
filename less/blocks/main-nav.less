@@ -1,14 +1,30 @@
 .main-nav {
-  
   &__item {
     background: @color-bg-secondary;
-    
     a {
       .set-link-style(@color-text-secondary, none);
+      display: block;
+      text-align: center;
       font-size: 18px;
       line-height: 40px;
       text-transform: uppercase;
       font-weight: @font-bold;
     }
+    
+    &:nth-last-child(n + 2) {
+      border-bottom: 1px solid #678fa8;
+    }
+    
+    &:nth-child(n + 2) {
+      border-top: 1px solid #9ac2db;
+    }
+  }
+  
+  &__toggle {
+    display: block;
+    width: 100%;
+    color: @color-text;
+    background: @color-bg;
+    border: none;
   }
 }
