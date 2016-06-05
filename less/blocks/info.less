@@ -1,0 +1,28 @@
+.info {
+  @color: @color-text;
+  
+  &__title {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: @font-bold;
+    color: @color;
+  }
+  
+  &__message {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: @font-normal;
+    color: @color;
+  }
+  
+  &__find-hotel-btn {
+    .set-link-style(@color-text-secondary, none);
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: @font-bold;
+    background: @color-bg-secondary;
+  }
+}

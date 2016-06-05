@@ -1,0 +1,78 @@
+.form {
+  @color: @color-text;
+  @color-bg: @color-bg-input;
+  
+  &__set {
+    border: none;
+  }
+  
+  &__set-header {
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: @font-bold;
+    color: @color;
+  }
+  
+  &__label {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: @font-normal;
+    color: @color;
+    
+    &--bold {
+      font-size: 18px;
+      text-transform: none;
+      font-weight: @font-bold;
+    }
+  }
+  
+  &__input-text {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: @font-bold;
+    color: @color;
+    background: @color-bg;
+    border: none;
+    
+    &[placeholder]          {color: @color;}
+    &::-moz-placeholder     {color: @color;}
+    &:-moz-placeholder      {color: @color;}
+    &:-ms-input-placeholder {color: @color;}
+    
+    &[placeholder]          {text-overflow: ellipsis;}
+    &::-moz-placeholder     {text-overflow: ellipsis;}
+    &:-moz-placeholder      {text-overflow: ellipsis;}
+    &:-ms-input-placeholder {text-overflow: ellipsis;}
+    
+    &:focus::-webkit-input-placeholder {color: transparent;}
+    &:focus::-moz-placeholder          {color: transparent;}
+    &:focus:-moz-placeholder           {color: transparent;}
+    &:focus:-ms-input-placeholder      {color: transparent;}
+  }
+  
+  &__textarea {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: @font-bold;
+    color: @color;
+    background: @color-bg;
+    border: none;
+    resize: none;
+  }
+  
+  &__button {
+    &--submit {
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: @font-bold;
+      color: @color-text-secondary;
+      background: @color-bg-secondary;
+      border: none;
+    }
+  }
+}
