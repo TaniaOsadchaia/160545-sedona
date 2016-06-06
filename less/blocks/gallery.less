@@ -1,5 +1,19 @@
 .gallery {
-  .container();
+  
+  &__item {
+    margin-bottom: 20px;
+    padding-top: 22px;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  &__item-container {
+    .container();
+  }
+  
+  &__item-image {
+    margin: 0;
+    margin-bottom: 18px;
+  }
   
   &__item-title {
     font-size: 14px;
@@ -26,11 +40,6 @@
     text-transform: none;
     font-weight: @font-bold;
     color: @color-text;
-  }
-  
-  &__item-image {
-    margin: 0;
-    padding: 0;
   }
   
   /*&__item-likes-label {

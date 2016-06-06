@@ -1,7 +1,9 @@
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,9 +20,18 @@ img {
   height: auto;
 }
 
-ul,
 ul li {
-  margin: 0;
-  padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
 }

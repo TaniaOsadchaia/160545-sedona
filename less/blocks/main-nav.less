@@ -1,14 +1,14 @@
 .main-nav {
+  
   &__item {
     background: @color-bg-secondary;
-    a {
-      .set-link-style(@color-text-secondary, none);
-      display: block;
-      text-align: center;
-      font-size: 18px;
-      line-height: 40px;
-      text-transform: uppercase;
-      font-weight: @font-bold;
+    
+    &:hover {
+      background: lighten(@color-bg-secondary, 5%);
+    }
+    
+    &:active {
+      background: darken(@color-bg-secondary, 5%);
     }
     
     &:nth-last-child(n + 2) {
@@ -20,11 +20,37 @@
     }
   }
   
+  &__link {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: @font-bold;
+    color: @color-text-secondary;
+    
+    &:hover {
+      color: @color-text-secondary;
+    }
+    
+    &:active {
+      color: darken(@color-text-secondary, 10%);
+    }
+  }
+  
   &__toggle {
     display: block;
     width: 100%;
     color: @color-text;
     background: @color-bg;
     border: none;
+    
+    &:hover {
+      border: none;
+    }
+    
+    &:active {
+      border: none;
+    }
   }
 }

@@ -1,36 +1,52 @@
 .info {
-  @color: @color-text;
   
   text-align: center;
   
   &__container {
     .container();
+    margin-bottom: 50px;
+    padding-top: 28px;
   }
   
   &__title {
+    margin-bottom: 18px;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
     font-weight: @font-bold;
-    color: @color;
+    color: @color-text;
   }
   
   &__message {
+    margin-bottom: 36px;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
     font-weight: @font-normal;
-    color: @color;
+    color: @color-text;
   }
   
   &__find-hotel-btn {
-    .set-link-style(@color-text-secondary, none);
     display: block;
     padding: 5px 16px;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
     font-weight: @font-bold;
+    color: @color-text-secondary;
     background: @color-bg-secondary;
+    border: none;
+    
+    &:hover {
+      color: @color-text-secondary;
+      background: @color-bg-secondary;
+      border: none;
+    }
+    
+    &:active {
+      color: @color-text-secondary;
+      background: @color-bg-secondary;
+      border: none;
+    }
   }
 }
