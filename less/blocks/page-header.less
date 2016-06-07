@@ -1,0 +1,32 @@
+.page-header {
+  
+}
+
+.page-header__logo {
+  position: relative;
+  height: 389px;
+  background: transparent url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 100%;
+  
+  &--small {
+    height: 158px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: transparent url(../img/bg-intro-triangle-mobile.svg) no-repeat 50% 100%;
+    background-size: cover;
+  }
+}
+
+.page-header__logo-img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
