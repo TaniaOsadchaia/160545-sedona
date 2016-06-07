@@ -19,8 +19,8 @@
         </div>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
-      <div class="page-header__logo">
-        <img src="http://placehold.it/229x39" width="229" height="39" alt="Седона">
+      <div class="page-header__logo  page-header__logo--small">
+        <img class="page-header__logo-img" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
       </div>
     </header>
     <main>
@@ -32,7 +32,7 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__set">
             <div class="form__container">
-              <legend class="form__set-header">Представьтесь, пожалуйста:</legend>
+              <legend class="form__set-title">Представьтесь, пожалуйста:</legend>
               <label class="form__label" for="name">Имя:</label>
               <input class="form__input-text" id="name" name="name" type="text" placeholder="Ваше имя">
               <label class="form__label" for="surname">Фамилия:</label>
@@ -43,7 +43,7 @@
           </fieldset>
           <fieldset class="form__set">
             <div class="form__container">
-              <legend class="form__set-header">Контактная информация:</legend>
+              <legend class="form__set-title">Контактная информация:</legend>
               <label class="form__label" for="tel">Контактный телефон:</label>
               <input class="form__input-text  form__input-text--phone" id="tel" name="tel" type="tel" placeholder="Введите телефон">
               <label class="form__label" for="email">Электронная почта:</label>
@@ -52,7 +52,7 @@
           </fieldset>
           <fieldset class="form__set">
             <div class="form__container">
-              <legend class="form__set-header">Ваше общее впечатление:</legend>
+              <legend class="form__set-title">Ваше общее впечатление:</legend>
               <input class="form__input-radio  form__input-radio--checked" id="rating-1" name="rating" type="radio" value="rating-1" checked>
               <label class="form__label  form__label--bold" for="rating-1">Скорее положительное</label>
               <input class="form__input-radio" id="rating-2" name="rating" type="radio" value="rating-2">
@@ -63,7 +63,7 @@
           </fieldset>
           <fieldset class="form__set">
             <div class="form__container">
-              <legend class="form__set-header">Посещенные достопримечательности:</legend>
+              <legend class="form__set-title">Посещенные достопримечательности:</legend>
               <input class="form__input-checkbox  form__input-checkbox--checked" id="check-in-1" name="check-in-1" type="checkbox" checked>
               <label class="form__label  form__label--bold" for="check-in-1">Мост Дьявола</label>
               <input class="form__input-checkbox  form__input-checkbox--checked" id="check-in-2" name="check-in-2" type="checkbox" checked>
@@ -76,7 +76,7 @@
           </fieldset>
           <fieldset class="form__set">
             <div class="form__container">
-              <legend class="form__set-header">Опишите свои эмоции:</legend>
+              <legend class="form__set-title">Опишите свои эмоции:</legend>
               <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>

@@ -1,88 +1,93 @@
 .form {
-  @color: @color-text;
-  @color-bg: @color-bg-input;
   
-  &__set {
-    border: none;
-    border-top: 1px solid #e5e5e5;
-  }
-  
-  &__container {
-    .container();
-  }
-  
-  &__set-header {
+}
+
+.form__container {
+  .container();
+}
+
+.form__set {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__set-title {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: @font-bold;
+  color: @color-text;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: @font-normal;
+  color: @color-text;
+
+  &--bold {
     font-size: 18px;
-    line-height: 28px;
+    text-transform: none;
+    font-weight: @font-bold;
+  }
+}
+
+.form__input-text {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  text-transform: none;
+  font-weight: @font-bold;
+  color: @color-text;
+  background: @color-bg-input;
+  border: none;
+
+  &[placeholder]          {color: @color-text;}
+  &::-moz-placeholder     {color: @color-text;}
+  &:-moz-placeholder      {color: @color-text;}
+  &:-ms-input-placeholder {color: @color-text;}
+
+  &[placeholder]          {text-overflow: ellipsis;}
+  &::-moz-placeholder     {text-overflow: ellipsis;}
+  &:-moz-placeholder      {text-overflow: ellipsis;}
+  &:-ms-input-placeholder {text-overflow: ellipsis;}
+
+  &:focus::-webkit-input-placeholder {color: transparent;}
+  &:focus::-moz-placeholder          {color: transparent;}
+  &:focus:-moz-placeholder           {color: transparent;}
+  &:focus:-ms-input-placeholder      {color: transparent;}
+}
+
+.form__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: @font-bold;
+  color: @color-text;
+  background: @color-bg-input;
+  border: none;
+  resize: none;
+}
+
+.form__button {
+  &--submit {
+    display: block;
+    width: 100%;
+    padding: 5px 16px;
+    font-size: 21px;
+    line-height: 26px;
     text-align: center;
     text-transform: uppercase;
     font-weight: @font-bold;
-    color: @color;
-  }
-  
-  &__label {
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    font-weight: @font-normal;
-    color: @color;
-    
-    &--bold {
-      font-size: 18px;
-      text-transform: none;
-      font-weight: @font-bold;
-    }
-  }
-  
-  &__input-text {
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-    font-weight: @font-bold;
-    color: @color;
-    background: @color-bg;
+    color: @color-text-secondary;
+    background: @color-bg-secondary;
     border: none;
-    
-    &[placeholder]          {color: @color;}
-    &::-moz-placeholder     {color: @color;}
-    &:-moz-placeholder      {color: @color;}
-    &:-ms-input-placeholder {color: @color;}
-    
-    &[placeholder]          {text-overflow: ellipsis;}
-    &::-moz-placeholder     {text-overflow: ellipsis;}
-    &:-moz-placeholder      {text-overflow: ellipsis;}
-    &:-ms-input-placeholder {text-overflow: ellipsis;}
-    
-    &:focus::-webkit-input-placeholder {color: transparent;}
-    &:focus::-moz-placeholder          {color: transparent;}
-    &:focus:-moz-placeholder           {color: transparent;}
-    &:focus:-ms-input-placeholder      {color: transparent;}
-  }
-  
-  &__textarea {
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-    font-weight: @font-bold;
-    color: @color;
-    background: @color-bg;
-    border: none;
-    resize: none;
-  }
-  
-  &__button {
-    &--submit {
-      display: block;
-      width: 100%;
-      padding: 5px 16px;
-      font-size: 21px;
-      line-height: 26px;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: @font-bold;
-      color: @color-text-secondary;
-      background: @color-bg-secondary;
-      border: none;
-    }
   }
 }
