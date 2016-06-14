@@ -1,3 +1,31 @@
 .social-link {
-  background: @color-bg-secondary;
+  position: relative;
+  display: inline-block;
+  margin: 3px;
+  width: 46px;
+  height: 48px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: auto;
+  }
+  
+  &--twitter::after {
+    background: @color-bg-secondary url(../img/icon-twitter.svg) no-repeat 50% 50%;
+  }
+    
+  &--facebook::after {
+    background: @color-bg-secondary url(../img/icon-facebook.svg) no-repeat 50% 50%;
+  }
+    
+  &--youtube::after {
+    background: @color-bg-secondary url(../img/icon-youtube.svg) no-repeat 50% 50%;
+  }
 }
