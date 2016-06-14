@@ -11,7 +11,15 @@
 }
 
 .container() {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @media @tablet {
+    width: 640px;
+  }
+
+  @media @desktop {
+    width: 960px;
+  }
 }

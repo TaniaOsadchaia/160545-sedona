@@ -54,5 +54,21 @@
 }
 
 .info__map {
-  height: 350px;
+  min-height: 350px;
+  background: transparent url(../img/bg-map-mobile@1x.jpg) no-repeat 50% 0px;
+  background-size: 320px auto;
+}
+
+@media @tablet {
+  .info__map {
+    background: transparent url(../img/bg-map-tablet@1x.jpg) no-repeat 50% 0px;
+    background-size: 768px auto;
+  }
+}
+
+@media @desktop {
+  .info__map {
+    background: transparent url(../img/bg-map-desktop@1x.jpg) no-repeat 50% 0px;
+    background-size: 1200px auto;
+  }
 }
